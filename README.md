@@ -12,7 +12,7 @@ Edit email content in `register.php`
 
 Copy files to your application.
 
-Run this SQL on your Database schema:
+Run this SQL or create one on your Database schema:
 
 	CREATE TABLE IF NOT EXISTS `users` (
 	  `ID` int(11) NOT NULL AUTO_INCREMENT,
@@ -43,4 +43,4 @@ p.s. I increase password sercuity when update or insert it to database (on line 
 
 ## License
 
-Exculsive MySQL class. This script has no license and free to use.
+Exclusive MySQL class. This script has no license and free to use.

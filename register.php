@@ -2,7 +2,7 @@
 
 /*
  *	This PHP script is an example of registration. It's very simple and no security.
- *  DO NOT use this script for normal site.
+ *	DO NOT use this script for normal site.
  *
  */
 
@@ -53,7 +53,7 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
 // Additional headers
-$headers .= 'From: Support <support@domainname.com>' . "\r\n";
+$headers .= 'From: ' . SENDER_NAME . ' <' . SENDER_ADDR . '>' . "\r\n";
 $headers .= 'X-Mailer: PHP/' . phpversion();;
 
 $send_status = mail($to, $subject, $body, $headers);
@@ -61,7 +61,7 @@ $send_status = mail($to, $subject, $body, $headers);
 if(!$send_status) {
 	echo '<p>Mail send fail.</p>';
 } else {
-	echo '<p>Send Success!</p>';
+	echo '<p>Registration Success!</p>';
     echo '<p>An activation link is send to your email.</p>';
 }
 
